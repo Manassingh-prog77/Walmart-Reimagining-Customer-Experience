@@ -185,7 +185,7 @@ export default function Home(){
     return(
         <div>
            {/* Hero Section  */}
-         <div className="grid grid-cols-[1fr_1.5fr_1fr] gap-4 p-4 pt-30 bg-white ">
+         <div className="grid grid-cols-[1fr_1.5fr_1fr] gap-4 p-4 pt-33 bg-white ">
             {/* 1st column */}
             <div>
       {leftitems.map((item, idx) => (
@@ -275,9 +275,9 @@ export default function Home(){
           <h2 className="text-2xl md:text-3xl font-bold mb-2 leading-tight">
             Mainstays by Becky G & Alejandra
           </h2>
-          <button className="bg-white text-black font-semibold px-4 py-2 rounded-full w-fit hover:bg-gray-100 transition">
+          <Link to="/product"><button className="bg-white text-black font-semibold px-4 py-2 rounded-full w-fit hover:bg-gray-100 transition">
             Shop now
-          </button>
+          </button></Link>
           <p className="mt-2 text-sm">From <span className="text-lg font-bold">$6</span></p>
         </div>
       </div>
@@ -301,9 +301,9 @@ export default function Home(){
               <img src={product.image} alt={product.title} className="w-full h- rounded-lg mb-2" />
               <p className="font-semibold text-sm">{product.price}</p>
               <p className="text-xs text-gray-600 leading-tight">{product.title}</p>
-              <button className="mt-2 text-xs border border-black px-3 py-1 rounded-full hover:bg-gray-100">
+              <Link to="/product"><button className="mt-2 text-xs border border-black px-3 py-1 rounded-full hover:bg-gray-100">
                 Options
-              </button>
+              </button></Link>
             </div>
           ))}
         </div>
@@ -333,9 +333,9 @@ export default function Home(){
               <img src={product.image} alt={product.title} className="w-full h- rounded-lg mb-2" />
               <p className="font-semibold text-sm">{product.price}</p>
               <p className="text-xs text-gray-600 leading-tight">{product.title}</p>
-              <button className="mt-2 text-xs border border-black px-3 py-1 rounded-full hover:bg-gray-100">
+              <Link to="/product"><button className="mt-2 text-xs border border-black px-3 py-1 rounded-full hover:bg-gray-100">
                 Options
-              </button>
+              </button></Link>
             </div>
           ))}
         </div>
@@ -353,9 +353,9 @@ export default function Home(){
           <h2 className="text-2xl md:text-3xl font-bold mb-2 leading-tight">
             Sandals for the fam
           </h2>
-          <button className="bg-white text-black font-semibold px-4 py-2 rounded-full w-fit hover:bg-gray-100 transition">
+         <Link to="/product"> <button className="bg-white text-black font-semibold px-4 py-2 rounded-full w-fit hover:bg-gray-100 transition">
             Shop now
-          </button>
+          </button></Link>
           <p className="mt-2 text-sm">From <span className="text-lg font-bold">$6</span></p>
         </div>
       </div>
@@ -417,9 +417,9 @@ export default function Home(){
               <img src={product.image} alt={product.title} className="w-full h- rounded-lg mb-2" />
               <p className="font-semibold text-sm">{product.price}</p>
               <p className="text-xs text-gray-600 leading-tight">{product.title}</p>
-              <button className="mt-2 text-xs border border-black px-3 py-1 rounded-full hover:bg-gray-100">
+             <Link to="/product"><button className="mt-2 text-xs border border-black px-3 py-1 rounded-full hover:bg-gray-100">
                 Options
-              </button>
+              </button></Link>
             </div>
           ))}
         </div>
@@ -444,9 +444,9 @@ export default function Home(){
               <img src={product.image} alt={product.title} className="w-full h- rounded-lg mb-2" />
               <p className="font-semibold text-sm">{product.price}</p>
               <p className="text-xs text-gray-600 leading-tight">{product.title}</p>
-              <button className="mt-2 text-xs border border-black px-3 py-1 rounded-full hover:bg-gray-100">
+             <Link to="/product"> <button className="mt-2 text-xs border border-black px-3 py-1 rounded-full hover:bg-gray-100">
                 Options
-              </button>
+              </button></Link>
             </div>
           ))}
         </div>

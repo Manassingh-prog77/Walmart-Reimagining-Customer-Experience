@@ -14,7 +14,7 @@ export default function Categories() {
   ];
 
   return (
-    <div className="bg-blue-50 border-b border-gray-200 text-sm text-blue-900 px-4  w-full fixed top-16 z-50">
+    <div className="bg-blue-50 border-b border-gray-200 text-sm text-blue-900 px-4   w-full fixed top-20 z-50">
       <div className="flex items-center gap-6 overflow-x-auto whitespace-nowrap py-2">
         {/* Departments */}
         <div className="flex items-center gap-1 font-semibold cursor-pointer hover:underline">

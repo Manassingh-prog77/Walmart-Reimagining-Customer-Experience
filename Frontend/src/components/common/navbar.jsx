@@ -5,22 +5,22 @@ import Location from "../../assets/Location.png";
 export default function  Navbar(){
 
     return(
-    <div className=" bg-blue-600 text-white flex items-center justify-between px-4 py-2    w-full top-0 fixed z-50">
+    <div className=" bg-[#0053e2] text-white flex items-center justify-between px-6  py-4  w-full top-0 fixed z-50">
       {/* Walmart logo (use any placeholder) */}
       <div className="flex items-center gap-2">
         <div className="text-3xl font-bold text-yellow-400">
             <img
             src={Logo}
             alt="image"
-            className="h-13"/>
+            className="h-10"/>
         </div>
 
         {/* Location Box */}
-        <div className="bg-blue-900 rounded-full px-3 py-1 flex items-center gap-2 text-sm cursor-pointer">
+        <div className="bg-blue-900 rounded-full ml-4 px-3 py-2 flex items-center gap-5 text-sm cursor-pointer">
           <img
-          src={Location}
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-ad46/k2-_0a671c38-d307-447c-835e-7904ab143c26.v1.png"
           alt="pickup"
-            className="w-6 h-6"
+            className="w-7 h-7"
           />
           <div className="flex flex-col leading-tight">
             <span className="font-semibold">Pickup or delivery?</span>
@@ -33,14 +33,14 @@ export default function  Navbar(){
       </div>
 
       {/* Search Bar */}
-      <div className="flex flex-1 mx-6 max-w-3xl">
+      <div className="flex flex-1 mx-15 max-w-2xl">
         <input
           type="text"
           placeholder="Search everything at Walmart online and in store"
           className="w-full px-4 py-2 rounded-l-full text-black text-sm focus:outline-none bg-white"
         />
         <button className="bg-white px-4 py-2 rounded-r-full">
-          <Search className="text-blue-600" />
+          <Search className="text-white bg-blue-900  rounded-full p-1" />
         </button>
       </div>
 
