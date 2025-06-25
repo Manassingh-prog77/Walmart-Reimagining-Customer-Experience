@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx';
 import Categories from './components/categories.jsx';
 import Product from './pages/Product.jsx';
 import Cart from './pages/Cart.jsx';
+import Assistant from './components/common/Assistant.jsx';
 function App() {
 
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/product/cart" element={<Cart />} />
            </Routes>
           </Box> 
+          <Assistant/>
           <Footer />
         </Router>
   )

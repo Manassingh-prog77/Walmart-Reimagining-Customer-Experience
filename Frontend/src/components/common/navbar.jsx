@@ -2,17 +2,20 @@ import { ShoppingCart, User2, Heart, ChevronDown, Search } from "lucide-react";
 import Logo from "../../assets/Walmart-Logo.svg"
 import Categories from "../categories";
 import Location from "../../assets/Location.png";
+import { Link } from "react-router";
+
+
 export default function  Navbar(){
 
     return(
     <div className=" bg-[#0053e2] text-white flex items-center justify-between px-6  py-4  w-full top-0 fixed z-50">
       {/* Walmart logo (use any placeholder) */}
       <div className="flex items-center gap-2">
-        <div className="text-3xl font-bold text-yellow-400">
-            <img
+        <div className="text-3xl font-bold text-yellow-400 hover:bg-blue-900 hover:rounded-full  ">
+           <Link to="/"> <img
             src={Logo}
             alt="image"
-            className="h-10"/>
+            className="h-10 "/></Link>
         </div>
 
         {/* Location Box */}
